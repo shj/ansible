@@ -1,0 +1,4 @@
+- name: host01 test
+  hosts: group01
+  roles:
+    - { role: group01/test, tag: test }
