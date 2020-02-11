@@ -1,8 +1,5 @@
 # ansible
 
-## build.sh
-- ディレクトリを作成するためのシェル
-
 ## パスワードの暗号化
 - パスワードは以下のフォーマットで記述する
   ```
@@ -25,9 +22,8 @@
 
 ## ディレクトリ構成
 ```
-ansible
+ansible/
 ├── ansible.cfg
-├── build.sh
 ├── inventories
 │   └── production
 │       ├── group_vars
@@ -41,14 +37,15 @@ ansible
     ├── host01.yml
     └── roles
         └── group01
-            └── test
-                ├── defaults
-                ├── files
-                ├── handlers
-                ├── meta
-                ├── tasks
-                │   └── main.yml
-                ├── templates
-                └── vars
+            └── dir01
+                └── test
+                    ├── defaults
+                    ├── files
+                    ├── handlers
+                    ├── meta
+                    ├── tasks
+                    │   └── main.yml
+                    ├── templates
+                    └── vars
 
 ```
